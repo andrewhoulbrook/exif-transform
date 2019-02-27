@@ -1,6 +1,6 @@
 # Maltego EXIFTool Transform
 
-A basic Maltgeo local transform for Phil Harvey's mighty EXIFTool application. 
+A basic Maltego local transform for Phil Harvey's mighty EXIFTool application. 
 
 ## Getting Started
 
