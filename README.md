@@ -1,10 +1,10 @@
 # Maltego EXIFTool Transform
 
-A basic Maltgeo local transform for Phil Harvery's mighty EXIFTool application. 
+A basic Maltgeo local transform for Phil Harvey's mighty EXIFTool application. 
 
 ## Getting Started
 
-Maltego offers a way to quickly visualize meta data extracted across multiple files. The content of some of that extracted data can also be dovetailed into other tranforms within the Maltego environment. For example, coordinates extracted from an image could be then form the input to transforms that search geotagged social media. 
+Maltego offers a way to quickly visualize meta data extracted across multiple files. The content of some of that extracted data can also be dovetailed into other transforms within the Maltego environment. For example, coordinates extracted from an image could be then form the input to transforms that search geotagged social media. 
 
 Rather than building my own GUI for EXIFTool or using those that already exist, I decided to experiment with wrapping the application's basic functionality into a simple python-based transform script for Maltego.   
 
