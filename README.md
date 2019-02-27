@@ -4,9 +4,9 @@ A basic Maltego local transform for Phil Harvey's mighty EXIFTool application.
 
 ## Getting Started
 
-Maltego offers a way to quickly visualize meta data extracted across multiple files. The content of some of that extracted data can also be dovetailed into other transforms within the Maltego environment. For example, coordinates extracted from an image could be then form the input to transforms that search geotagged social media. 
+Maltego can offer a way to quickly visualize meta data extracted across multiple files. The content of some of that extracted data can also be dovetailed into other transforms within the Maltego environment. For example, coordinates extracted from an image could then form the input to transforms that search geotagged social media. 
 
-Rather than building my own GUI for EXIFTool or using those that already exist, I decided to experiment with wrapping the application's basic functionality into a simple python-based transform script for Maltego.   
+Rather than building my own GUI for EXIFTool, or using those that already exist, I decided to experiment with wrapping the application's basic functionality into a simple python-based transform script for Maltego.   
 
 ![Example of transforms in action](/doc/exif.png)
 
@@ -18,7 +18,7 @@ This transform acts as a very basic wrapper for EXIFTool, a command line applica
 
 The EXIFTool application supports reading meta data from a vast range of different file types, not only JPG, TIFF and image file formats. [Read more here](http://owl.phy.queensu.ca/~phil/exiftool/#supported).
 
-The transform uses python *subprocess* module to call EXIFTool from the command line. 
+The transform uses the python *subprocess* module to call EXIFTool from the command line. 
 
 You'll need the following Python module installed too if you don't already have it:
 
@@ -47,9 +47,9 @@ Configure this local transform in Maltego, [see the Configuration Guide](https:/
 
 ## Running the Transform
 
-The EXIFTool transform can be run like any other local transform in Maltego. However, the transform will return items of meta data as a custom entity type named *maltego.MetaData*. You can install this custom entity via the .mtz (and the Maltego *Import Entities* function) in the entities directory, create your own or recode to one of the standard Maltego entity types.
+The EXIFTool transform can be run like any other local transform in Maltego. However, the transform will return items of meta data as a custom entity type named *maltego.MetaData*. You can install this custom entity via the .mtz (and the Maltego *Import Entities* function) in the entities directory, create your own or recode to use one of the standard Maltego entity types.
 
-I also created a custom *maltego.LocalFile* entity which this transform would be run from.
+I also created a custom *maltego.LocalFile* entity which this transform would be run from. The value of this entity is simply the local filepath to a document, image or other file that I want EXIFTool to extract meta data from.
 
 ## Built With
 
