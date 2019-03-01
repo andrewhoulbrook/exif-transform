@@ -3,6 +3,7 @@
 # Transform to extract EXIF using the mighty EXIFTOOL application (covers a massive range of document types)
 # Passes a local filepath to EXIFTOOL via CLI. 
 # Transform can be attached to a Maltego entity which holds the local filepath as the entity's value.
+import sys
 import codecs
 from bs4 import BeautifulSoup
 from MaltegoTransform import *
