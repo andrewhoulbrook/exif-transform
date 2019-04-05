@@ -60,7 +60,7 @@ I also created a custom *maltego.LocalFile* entity which this transform would be
 
 ## Authors
 
-* **Andrew Houlbrook** - *Initial work* - [ba2baha3o](https://github.com/ba2baha3o)
+* **Andrew Houlbrook** - *Initial work* - [andrewhoulbrook](https://github.com/andrewhoulbrook)
 
 ## License
 
